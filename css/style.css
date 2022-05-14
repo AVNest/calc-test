@@ -1,0 +1,102 @@
+/* roboto-regular - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  html{
+      box-sizing: border-box;
+  }
+  *, *::before, *::after{
+      box-sizing: inherit;
+  }
+  body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+    
+  }
+  .wrapper{
+      max-width: 1060px;
+      background: #E5E5E5;
+  }
+  .canvas{
+    position: relative;
+    width: 840px;
+    height: 595px;
+    background: #FFFFFF;
+  }
+  .calculate{
+    box-sizing: border-box;
+    position: absolute;
+    width: 420px;
+    height: 385px;
+    left: 210px;
+    top: 105px;
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    
+  }
+  .display{
+    position: absolute;
+    width: 370px;
+    height: 60px;
+    left: 25px;
+    top: 25px;
+    padding: 15px;
+    font-size: 28px;
+    text-align: right;
+    background: #F1F1F1;
+    border: 1px solid #000000;
+  }
+  .calc{
+    margin-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-auto-rows: 40px;
+    gap: 15px;
+    grid-template-areas: 
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . ."
+    ". . . . . . equal"
+    ". . . . . . equal";
+  }
+  .calc__btn{
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); 
+  }
+  .none__btn{
+    opacity: 0;
+  }
+  .rvt-btn{
+    border: none;
+    opacity: 0.9;
+    
+  }
+  .rvt_btn:active{
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); 
+  }
+  .calc_btn_equal{
+    grid-area: equal;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); 
+  }
+/*
+
+  width: 40px;
+
+
+
+
+  background: #F1F1F1;
+  border: 1px solid #000000;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25); 
+
+  */
