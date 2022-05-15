@@ -1,24 +1,17 @@
-const calc = document.querySelector('.calc');
-const result = document.querySelector('#result');
-
-calc.addEventListener('click', function(event) {
-    if(!event.target.classList.contains('calc__btn')) return;
-    const value = (event.target.innerText);
-
-    switch(value) {
-        case 'C':
-            result.innerText = '';
-            break;
-
-        case '=':
-            if(result.innerText.search(/[^0-9*/+-.]/mi) != -1) return;
-            result.innerText = eval(result.innerText).toFixed(8);
-            break;
-
-        default:
-            result.innerText += value;
-
+function insert(num) {
+    document.form.textview.value = 
+    document.form.textview.value + num;
+}
+function clean() {
+    document.form.textview.value = "";
+}
+function back() {
+    let exp = document.form.textview.value;
+    document.form.textview.value = exp.substring(0, exp.length - 1);
+}
+function equal() {
+    let exp = document.form.textview.value;
+    if(exp) {
+        document.form.textview.value = eval(exp);
     }
-
-    
-});
+}

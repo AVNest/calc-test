@@ -15,47 +15,47 @@
             <div class="calculate">
                 
                 <article class="calc">
-                    <output class="display" id="result"></output>
+                    <form class="display input" name="form"><output name="textview"></output></form>
 
                     <button type="button" class="calc__btn">MC</button>
                     <button type="button" class="none__btn">Cl</button>
                     <button type="button" class="none__btn">Cl</button>
-                    <button type="button" class="calc__btn">C</button>
-                    <button type="button" class="calc__btn">AC-</button>
-                    <button type="button" class="calc__btn"><-</button>
+                    <button type="button" class="calc__btn calc_btn_clean" onclick="clean()">C</button>
+                    <button type="button" class="calc__btn">AC</button>
+                    <button type="button" class="calc__btn calc_btn_back" onclick="back()">&larr;</button>
                     <button type="button" class="rvt-btn">Rvt</button>
 
                     <button type="button" class="calc__btn">MS</button>
                     <button type="button" class="none__btn">Cl</button>
-                    <button type="button" class="calc__btn">7</button>
-                    <button type="button" class="calc__btn">8</button>
-                    <button type="button" class="calc__btn">9</button>
-                    <button type="button" class="calc__btn">/</button>
-                    <button type="button" class="calc__btn">(</button>
+                    <button type="button" class="calc__btn" onclick="insert('7')">7</button>
+                    <button type="button" class="calc__btn" onclick="insert('8')">8</button>
+                    <button type="button" class="calc__btn" onclick="insert('9')">9</button>
+                    <button type="button" class="calc__btn" onclick="insert('/')">&divide;</button>
+                    <button type="button" class="calc__btn" onclick="insert('(')">(</button>
 
                     <button type="button" class="calc__btn">MR</button>
                     <button type="button" class="none__btn">Cl</button>
-                    <button type="button" class="calc__btn">4</button>
-                    <button type="button" class="calc__btn">5</button>
-                    <button type="button" class="calc__btn">6</button>
-                    <button type="button" class="calc__btn">*</button>           
-                    <button type="button" class="calc__btn">)</button>
+                    <button type="button" class="calc__btn" onclick="insert('4')">4</button>
+                    <button type="button" class="calc__btn" onclick="insert('5')">5</button>
+                    <button type="button" class="calc__btn" onclick="insert('6')">6</button>
+                    <button type="button" class="calc__btn" onclick="insert('*')">&times;</button>           
+                    <button type="button" class="calc__btn" onclick="insert(')')">)</button>
 
                     <button type="button" class="calc__btn">M+</button>
                     <button type="button" class="none__btn">Cl</button>
-                    <button type="button" class="calc__btn">1</button>
-                    <button type="button" class="calc__btn">2</button>
-                    <button type="button" class="calc__btn">3</button>
-                    <button type="button" class="calc__btn">-</button>
+                    <button type="button" class="calc__btn" onclick="insert('1')">1</button>
+                    <button type="button" class="calc__btn" onclick="insert('2')">2</button>
+                    <button type="button" class="calc__btn" onclick="insert('3')">3</button>
+                    <button type="button" class="calc__btn" onclick="insert('-')">-</button>
                     <button type="button" class="calc__btn calc_btn_equal">=</button>
                     
 
                     <button type="button" class="calc__btn">M-</button>
                     <button type="button" class="none__btn">Cl</button>
-                    <button type="button" class="calc__btn">0</button>
-                    <button type="button" class="calc__btn">.</button>
+                    <button type="button" class="calc__btn" onclick="insert('0')">0</button>
+                    <button type="button" class="calc__btn" onclick="insert('.')">.</button>
                     <button type="button" class="calc__btn">+/-</button>
-                    <button type="button" class="calc__btn">+</button>
+                    <button type="button" class="calc__btn" onclick="insert('+')">+</button>
                 </article>   
             </div>
         </div>
