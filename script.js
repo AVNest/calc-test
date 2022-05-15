@@ -12,6 +12,6 @@ function back() {
 function equal() {
     let exp = document.form.textview.value;
     if(exp) {
-        document.form.textview.value = eval(exp);
+        document.form.textview.value = eval(exp).toFixed(8);
     }
 }
